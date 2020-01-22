@@ -1,6 +1,10 @@
 #Taking the base image
 FROM node:alpine
 
+#Defining the work directory
+WORKDIR /usr/add
+
+
 #Defining the path for the package.json and node.js files. 
 #We need to give the following command to say that the files are in the same working directory
 COPY ./ ./
