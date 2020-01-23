@@ -7,10 +7,11 @@ node {
 	sh 'npm --version'
 }
 stages {
-        stage('Build') {
+ stage('Build') {
             steps {
-                nodejs(nodeJSInstallationName: 'recent node', configId: 'suneha2794@gmail.com') {
-                    sh 'npm config ls'
+               // nodejs(nodeJSInstallationName: 'recent node', configId: 'suneha2794@gmail.com') {
+                    //sh 'npm config ls'
+		    sh 'npm install'
                 }
             }
         }
