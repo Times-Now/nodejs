@@ -10,8 +10,8 @@ stages {
  stage('Build') {
             steps {
                // nodejs(nodeJSInstallationName: 'recent node', configId: 'suneha2794@gmail.com') {
-                    //sh 'npm config ls'
-		    sh 'npm install'
+                    sh 'npm config ls'
+		   
                 }
             }
         }
