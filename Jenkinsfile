@@ -6,3 +6,6 @@ node {
 	//env.PATH="${env.NODEJS_HOME};${env.PATH}"
 	sh 'npm --version'
 }
+stage('Build') {
+        app = docker.build("${image}")         
+    }
