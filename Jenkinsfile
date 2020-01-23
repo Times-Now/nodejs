@@ -9,13 +9,13 @@ node {
     def app_name = "apresentacao"
     def image_name = "menu"
     def image = "myhub/${image_name}"
-    def git_url = "bitbucket.org/myuser/myrepo.git"
+    def git_url = "https://github.com/Times-Now/nodejs.git"
 
 
     stage('Clone repository') {
         git branch: 'master',
-            credentialsId: 'jenkins',
-            url: "https://myuser@${git_url}"
+            credentialsId: 'suneha2794@gmail.com',
+            url: "https://github.com/Times-Now/nodejs"
     }
 
 
