@@ -6,6 +6,12 @@ node {
 	//env.PATH="${env.NODEJS_HOME};${env.PATH}"
 	sh 'npm --version'
 }
-stage('Build') {
-        app = docker.build("${image}")         
-    }
+stages {
+        stage('Build') {
+            steps {
+                nodejs(nodeJSInstallationName: 'recent node', configId: 'suneha2794@gmail.com') {
+                    sh 'npm config ls'
+                }
+            }
+        }
+}
